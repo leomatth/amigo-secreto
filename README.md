@@ -49,7 +49,7 @@ Apesar de já ter uma noção do uso de ** JavaScript ** a Alura tem me ajudado 
 
 1. adicionarAmigo()
 A função adicionarAmigo() é responsável por capturar o nome inserido pelo usuário, validar se o campo está vazio e adicionar o nome ao array de amigos.
-
+```javascript
 function adicionarAmigo() {
     let nomeAmigo = document.getElementById('amigo').value.trim();
     if (nomeAmigo === "") {
@@ -60,11 +60,12 @@ function adicionarAmigo() {
         console.log(amigos);
     }
 }
-
+```
 
 2. adicionarLista()
 A função adicionarLista() percorre o array de amigos e adiciona cada nome à lista no HTML, exibindo-os dinamicamente.
 
+```javascript
 function adicionarLista() {
     let lista = document.getElementById('listaAmigos');
     lista.innerHTML = "";
@@ -74,11 +75,12 @@ function adicionarLista() {
         lista.appendChild(li);
     }
 }
+```
 
 
 3. sortearAmigo()
 A função sortearAmigo() sorteia aleatoriamente um amigo da lista e exibe o nome do amigo sorteado na interface.
-
+```javascript
 function sortearAmigo(){
     if (amigos.length === 0) {
         window.alert('Não há amigos para sortear!');
@@ -88,7 +90,7 @@ function sortearAmigo(){
         document.getElementById('resultado').innerHTML = `O amigo sorteado é: ${sorteado}`;
     }
 }
-
+```
 
 Licença
 Este projeto é licenciado sob a MIT License.
